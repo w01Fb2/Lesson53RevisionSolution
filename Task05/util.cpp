@@ -21,7 +21,7 @@ void print_test(int** matrix, int n, int m, int i_expected, int j_expected, stri
 	if (n > 0 && m > 0 && matrix != nullptr) {
 		cout << "Current Matrix:\n" << convert(matrix, n, m);
 	}
-
+		
 	int i_actual = 0, j_actual = 0;
 	get_last_local_minimum(matrix, n, m, &i_actual, &j_actual);
 	bool result = i_actual == i_expected && j_actual == j_expected;
